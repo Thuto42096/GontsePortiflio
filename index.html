@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gontse Tsagane   CA(SA) - Accounting & Advisory</title>
+    <title>Gontse Tsagane - CA(SA) - Accounting & Advisory</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
     <header>
         <div class="container">
             <div style="display: flex; align-items: center; gap: 20px;">
-                <img src="/src/GT LOGO.png" alt="Logo">
-                <h1>Gontse Tsagane - CA(SA)</h1>
+                <img src="/src/g logo white.png" alt="Logo">
+                <h1>Gontse Tsagane <span>CA(SA)</span></h1>
             </div>
-            <nav>
+
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav-menu">
                 <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                            <span class="sun-icon">☀️</span>
+                            <span class="moon-icon">🌙</span>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -80,6 +98,9 @@
             <p>&copy; 2025 Gontse Tsagane, CA(SA). All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
 
 </body>
 </html>
